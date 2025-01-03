@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>🎵 Welcome to the Music Player</h1>
+      <p class="tagline">Discover, Play, and Enjoy Your Favorite Songs</p>
+    </header>
+
+    <div class="music-player">
+      <div class="left-panel">
+        <input type="file" id="folder-picker" webkitdirectory directory multiple>
+        <p class="instruction">Choose a folder to load your songs</p>
+        <div class="song-list">
+          <h2>All Songs</h2>
+          <ul id="all-songs"></ul>
+        </div>
+      </div>
+
+      <div class="right-panel">
+        <div class="now-playing">
+          <h2 id="song-title">Choose a song</h2>
+          <p id="artist-name">Artist Name</p>
+        </div>
+        <audio id="audio" controls></audio>
+        <div class="controls">
+          <button id="prev-btn" class="btn">⏮️</button>
+          <button id="play-btn" class="btn">▶️</button>
+          <button id="next-btn" class="btn">⏭️</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; 2025 <a href="https://mbuguapeter.netlify.app" class="highlight" target="_blank">Mbugua Peter</a>. All rights reserved.</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
